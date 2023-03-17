@@ -3,7 +3,7 @@ import zipfile
 
 
 # Changing the CWD 
-os.chdir('E:\TA Filoger\Solving\Test\Ex07')
+os.chdir('E:\TA Filoger\Solving\Test\Ex07') #get the folder
 
 dir = os.getcwd() 
 list_of_folder = os.listdir(dir)
@@ -16,7 +16,6 @@ for i in range(0,len(list_of_folder)):
 
 
 
-#note_books = [] # 'E:\\TA Filoger\\Solving\\Shayan\\۲۲۸۳۷۸۱۹۳۰\\درگاه پاسخPythonEx01\\FCVS_Feb23_Python_Ex01_Arman_Vahedipour_Tabrizi.ipynb'
 parent_dir = os.getcwd()
 
 path = [] #'E:\\TA Filoger\\Solving\\Test\\Ex05\\1272248461'
@@ -44,10 +43,3 @@ for m in range(0, len(file)):
 for q in range(0,len(zips)):
     with zipfile.ZipFile(zips[q], "r") as zip_file:
         zip_file.extractall(r'C:\Users\Shayan\Desktop\fi') # folder that saves files
-
-
-
-
-# for f in os.listdir(file[2]):
-#    if f.endswith(".ipynb") :
-#          print(f)
